@@ -216,8 +216,9 @@ color: var(--hover-link-color);
   |============================
 */
 
-.hero {
+    /* Hero */
 
+.hero {
     background-color: var(--dark-bg-color);
     padding-top: 188px;
     padding-bottom: 188px;
@@ -467,8 +468,11 @@ border-color: var(--hover-link-color);
 }
 
 .footer-wrapper{
-display: flex;
-gap: 120px;
+    display: flex;
+}
+
+.footer-logo-wrapper{
+    margin-right: 120px;
 }
 
 .page-footer .logo-link {
@@ -484,6 +488,10 @@ gap: 120px;
     color: var(--footer-txt-color);
     max-width: 264px;
     margin-top: 16px;
+}
+
+.socials-footer-wrapper{
+    margin-right: 80px;
 }
 
 .socials-text{
@@ -513,6 +521,21 @@ gap: 120px;
 .socials-footer-link:focus{
     background-color: #31D0AA;
 }
+
+.subscribe-label{
+    font-weight: 500;
+    color: var(--light-txt-color);
+    
+}
+
+.subscribe-btn{
+    
+    padding: 16px 32px;
+    border-style: none;
+}
+
+
+
 /**
   |============================
   | Portfolio
@@ -694,3 +717,8 @@ position: absolute;
 /* .modal-icon{
 
 } */
+
+.modal-title{
+    font-weight: 500;
+    margin: 72px 24px 16px 24px;
+}
