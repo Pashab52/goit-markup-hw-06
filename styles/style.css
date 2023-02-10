@@ -450,8 +450,8 @@ background-color: violet */
 
 .customers-link:hover,
 .customers-link:focus{
-fill: var(--hover-link-color);
-border-color: var(--hover-link-color);
+    fill: var(--hover-link-color);
+    border-color: var(--hover-link-color);
 }
 
 
@@ -525,6 +525,27 @@ border-color: var(--hover-link-color);
 .subscribe-label{
     font-weight: 500;
     color: var(--light-txt-color);
+}
+
+.subscribe-input{
+    width: 264px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--dark-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    padding: 8px 16px 8px 16px;
+
+   }
+
+
+.subscribe-input::placeholder{
+    font-size: 12px;
+    line-height: calc( 24 / 12 );
+    letter-spacing: 0.04em;
+    
     
 }
 
