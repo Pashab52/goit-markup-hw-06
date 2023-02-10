@@ -554,9 +554,25 @@ background-color: violet */
     border: 1px solid var(--brand-color);
    }
 
+.subscribe-btn {
+    position: relative;
+    width: 165px;
+    height: 40px;
+ 
+    padding: 8px 64px 8px 24px;
+    border-style: none;
 
 
-.subscribe-btn{
+}
+
+.btn-icon {
+   position: absolute;
+   right: 24px;
+   top: 8px;
+   fill: var(--light-txt-color);
+}
+
+/* .subscribe-btn{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -570,8 +586,7 @@ background-color: violet */
 
 .btn-icon{
     fill: var(--light-txt-color);
-    
-}
+} */
 
 /**
   |============================
