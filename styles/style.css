@@ -14,6 +14,7 @@
 --footer-txt-color: #E7E9FC;
 --hover-link-color:#404BBF;
 --customers-logo-color:#8E8F99;
+--form-label-color: #8E8F99;
 
 
 /* BG colors */
@@ -546,7 +547,7 @@ background-color: violet */
     font-size: 12px;
     line-height: calc(24 / 12);
     letter-spacing: 0.04em; 
-
+    transition: border-color var(--animation-time);
    }
 
    .subscribe-input:focus {
@@ -719,6 +720,7 @@ position: absolute;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 300ms linear, visibility 300ms linear;
+    
 }
 
 .modal {
@@ -732,6 +734,7 @@ position: absolute;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 200ms linear 100ms;
+    padding: 72px 24px 24px 24px;
 }
 
 .is-hidden .modal{
@@ -766,11 +769,57 @@ position: absolute;
     pointer-events:none;
 }
 
-/* .modal-icon{
 
+.callback-title{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.label{
+    display: block;
+    font-size: 12px;
+    line-height: calc(16 / 24);
+    letter-spacing: 0.04em;
+    color: var(--form-label-color);
+    margin-bottom: 4px;
+}
+
+.callback-input{
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: #000000;
+    font-size: 18px;
+    padding-left: 38px;
+    transition: border-color var(--animation-time);
+    
+}
+
+.callback-input:focus{
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+
+.input-wrapper{
+    position: relative;
+  
+}
+
+/* .callback-field:focus-within .label{
+   color: #4D5AE5;
 } */
 
-.modal-title{
-    font-weight: 500;
-    margin: 72px 24px 16px 24px;
+
+.callback-icon{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill var(--animation-time);
+}
+
+.callback-input:focus + .callback-icon{
+    fill: var(--brand-color);
 }
