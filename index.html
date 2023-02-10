@@ -748,7 +748,7 @@
         </div>
 
         <div class="socials-footer-wrapper">
-          <p class="socials-text">Social media</p>
+          <p class="footer-title">Social media</p>
           <ul class="socials-footer-list list">
             <li>
               <a
@@ -816,12 +816,15 @@
           </ul>
         </div>
 
-        <form class="subscribe-form">
-          <label class="subscribe-field">
-            <p class="subscribe-label">Subscribe</p>
-            <input class="subscribe-input" type="email" placeholder="E-mail"/>
-            </label>
-            <button class="btn subscribe-btn" type="submit">Subscribe</button>
+        <form class="subscribe-form" name="subscribe_form" autocomplete="off">
+          <p class="footer-title">Subscribe</p>
+          <div class="subscribe-field">
+            <label>
+              <input class="subscribe-input" type="email" placeholder="E-mail" name="subscribe_mail"/>
+              </label>
+              <button class="btn subscribe-btn" type="submit">Subscribe</button>
+          </div>
+
         </form>
       </div>
     </footer>
@@ -841,7 +844,7 @@
             ></use>
           </svg>
         </button>
-        <form class="subscribe-form" name="subscribe_form">
+        <form class="subscribe-form" name="subscribe_form" autocomplete="off">
           <div
             class="form-group"
             role="group"
