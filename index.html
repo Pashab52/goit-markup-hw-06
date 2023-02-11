@@ -820,7 +820,7 @@
           <p class="footer-title">Subscribe</p>
           <div class="subscribe-field">
             <label>
-              <input class="subscribe-input" type="email" placeholder="E-mail" name="subscribe_mail"/>
+              <input class="subscribe-input" type="email" placeholder="E-mail" name="subscribe_mail" required/>
               </label>
               <button class="btn subscribe-btn" type="submit">Subscribe
                 <svg class="btn-icon" width="24" height="24">
@@ -859,7 +859,7 @@
          <label class="callback-field">
           <span class="label">Name</span>
           <div class="input-wrapper">
-            <input class="callback-input" type="text" name="name">
+            <input class="callback-input" type="text" name="name" required>
             <svg class="callback-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#person"></use>
             </svg>
@@ -867,25 +867,40 @@
          </label>
 
 
-         <label for="">
-          <input type="tel" name="">
-          <svg width="18" height="24">
-            <use></use>
-          </svg>
+         <label class="callback-field">
+          <span class="label">Phone</span>
+          <div class="input-wrapper">
+            <input class="callback-input" type="tel" name="phone" required>
+            <svg class="callback-icon" width="18" height="24">
+              <use href="./images/symbol-defs.svg#phone"></use>
+            </svg>
+          </div>
          </label>
 
-         <label>
-          <input type="email" name="">
-          <svg width="18" height="24">
-            <use></use>
-          </svg>
+         <label class="callback-field">
+          <span class="label">Email</span>
+          <div class="input-wrapper">
+            <input class="callback-input" type="email" name="email" required>
+            <svg class="callback-icon" width="18" height="24">
+              <use href="./images/symbol-defs.svg#email"></use>
+            </svg>
+          </div>
          </label>
 
-         <label for="">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+         <label class="comment-field">
+          <span class="label">Comment</span>
+          <textarea class="comment-input" name="comment" placeholder="Text input"></textarea>
         </label>
 
-        <button type="submit"></button>
+        <label class="privacy-field">
+          <input class="privacy-input" type="checkbox" name="privacy_input" required>
+          <svg class="" width="" height="">
+            <use href=""></use>
+          </svg>
+          <p class="privacy-text">I accept the terms and conditions of the <a class="policy-link" href="">Privacy Policy</a></p>
+        </label>
+
+        <button class="btn hero-btn" type="submit">Send</button>
 
         </form>
       </div>

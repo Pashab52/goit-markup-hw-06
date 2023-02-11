@@ -266,6 +266,7 @@ color: var(--hover-link-color);
     border-style: none;
     margin-right: auto;
     margin-left: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
 }
 
@@ -729,7 +730,6 @@ position: absolute;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0) scale(1);
     width: 408px;
-    height: 576px;
     background-color: var(--modal-bg-color);
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -779,8 +779,9 @@ position: absolute;
 .label{
     display: block;
     font-size: 12px;
-    line-height: calc(16 / 24);
-    letter-spacing: 0.04em;
+    line-height: 14px;    
+    letter-spacing: 0.01em;
+    line-height: calc(14 / 12);
     color: var(--form-label-color);
     margin-bottom: 4px;
 }
@@ -807,6 +808,10 @@ position: absolute;
   
 }
 
+.callback-field{
+    display: block;
+    margin-bottom: 8px;
+}
 /* .callback-field:focus-within .label{
    color: #4D5AE5;
 } */
@@ -823,3 +828,66 @@ position: absolute;
 .callback-input:focus + .callback-icon{
     fill: var(--brand-color);
 }
+
+.comment-field{
+    display: block;
+    margin-bottom: 16px;
+}
+
+.comment-input{
+    width: 360px;
+    height: 120px;
+    padding: 8px 16px;
+    resize: none;
+    color: #000000;
+    font-size: 18px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.comment-input::placeholder{
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-input:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+
+.comment-input:focus.comment-input::placeholder{
+    color: var(--brand-color);
+}
+
+.privacy-field {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.privacy-input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+}
+
+.privacy-input:checked{
+    background-color: var(--brand-color);
+    border: transparent;
+}
+
+.privacy-text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #757575;
+    margin-left: 8px;
+}
+
+.policy-link{
+    text-underline-offset: 2.8px;
+}
+
