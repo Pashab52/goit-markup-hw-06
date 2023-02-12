@@ -875,12 +875,11 @@ position: absolute;
     border-radius: 2px;
     transition: background-color var(--animation-time);
     
-    
 }
 
 .privacy-input:checked{
     background-color: var(--brand-color);
-    border: transparent;
+    border: 1.25px solid var(--brand-color);
     
 }
 
