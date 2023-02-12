@@ -864,6 +864,7 @@ position: absolute;
 .privacy-field {
     display: flex;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .privacy-input {
@@ -872,11 +873,15 @@ position: absolute;
     height: 16px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
+    transition: background-color var(--animation-time);
+    
+    
 }
 
 .privacy-input:checked{
     background-color: var(--brand-color);
     border: transparent;
+    
 }
 
 .privacy-text {
@@ -888,6 +893,18 @@ position: absolute;
 }
 
 .policy-link{
-    text-underline-offset: 2.8px;
+    text-underline-offset: 2.5px;
 }
 
+.privacy-icon{
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    fill: transparent;
+    transition: fill var(--animation-time);
+    
+}
+
+.privacy-input:checked + .privacy-icon{
+    fill: #F4F4FD
+}
